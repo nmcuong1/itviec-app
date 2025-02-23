@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/itviec-app/static/css/main.3c6db881.css",
+    "main.js": "/itviec-app/static/js/main.0bdb4907.js",
+    "static/js/453.28b106bb.chunk.js": "/itviec-app/static/js/453.28b106bb.chunk.js",
+    "index.html": "/itviec-app/index.html",
+    "main.3c6db881.css.map": "/itviec-app/static/css/main.3c6db881.css.map",
+    "main.0bdb4907.js.map": "/itviec-app/static/js/main.0bdb4907.js.map",
+    "453.28b106bb.chunk.js.map": "/itviec-app/static/js/453.28b106bb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3c6db881.css",
+    "static/js/main.0bdb4907.js"
+  ]
+}
