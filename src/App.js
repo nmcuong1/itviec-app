@@ -3,11 +3,11 @@ import './App.css';
 import "../src/assets/styles/Header.css"
 import "../src/assets/styles/Footer.css"
 import "../src/assets/styles/HomePage.css"
-// import iconLinkedin from './assets/images/icon/iconLinkedin'
-// import iconface from './assets/images/icon/iconface'
-// import iconyoutobe from './assets/images/icon/iconyoutobe'
+ import iconLinkedin from "./assets/images/icon/social.png"
+ import iconface from './assets/images/icon/icon_face.jpg'
+ import iconyoutobe from './assets/images/icon/icon_youyobe.png'
 import { useEffect, useState } from 'react';
-
+import logo from "./assets/images/logo_itviec.webp"
 
 
 function App() {
@@ -70,7 +70,7 @@ function App() {
    <div>
      <header className="header">
       <nav>
-              {/* <img src={logo} alt="ITviec Logo" className="logo" /> */}
+              { <img src={logo} alt="ITviec Logo" className="logo" /> }
             <ul className="dropdown">
               <i class="fas fa-h1    "></i>
           <li>
@@ -348,12 +348,12 @@ function App() {
       
       <div className="footer-links">
       <div className="footer-logo">
-        {/* <img src={logo} alt="Logo" /> */}
+        { <img src={logo} alt="Logo" />}
         <p>It nhung chat</p>
         <div className="footer-social">
-        {/* <a href="#"><img src={iconLinkedin} alt="LinkedIn" /></a>
+        <a href="#"><img src={iconLinkedin} alt="LinkedIn" /></a>
         <a href="#"><img src={iconface} alt="Facebook" /></a>
-        <a href="#"><img src={iconyoutobe} alt="YouTube" /></a> */}
+        <a href="#"><img src={iconyoutobe} alt="YouTube" /></a> 
       </div>
       </div>
       
