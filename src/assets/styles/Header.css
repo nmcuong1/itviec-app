@@ -1,0 +1,98 @@
+/* Cấu trúc cơ bản */
+.header {
+  background: linear-gradient(to right, black, red);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.header nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 20px;
+}
+
+/* Cấu trúc cho menu */
+.dropdown {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.dropdown > li {
+  position: relative;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.dropdown > li > a {
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  color: #fbd4d4;
+}
+
+.dropdown > li > a:hover {
+  color: #feffff;
+}
+
+/* Ẩn submenu mặc định */
+.dropdown-submenu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #050505;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  min-width: 180px;
+}
+
+.dropdown-submenu li {
+  width: 100%;
+}
+
+.dropdown-submenu li a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.dropdown-submenu li a:hover {
+  background: #a8a8a8;
+  color: #ffffff;
+}
+
+/* submenu khi hover vào mục cha */
+.dropdown > li:hover > .dropdown-submenu {
+  display: block;
+}
+/* submenu khi hover vào mục cha */
+.dropdown > li:hover > .dropdown-submenu,
+.dropdown-submenu li:hover > .dropdown-submenu {
+  display: block;
+}
+
+/* submenu cấp 2 */
+.dropdown-submenu .dropdown-submenu {
+  left: 100%;
+  top: 0;
+  margin-left: 1px;
+  background: #1a1a1a;
+}

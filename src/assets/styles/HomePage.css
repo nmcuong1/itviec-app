@@ -1,0 +1,378 @@
+/* Button Hover */
+/* .button-levellevel:hover {
+  background-color: #45a049;
+} */
+.body {
+  /* width: 1180px;
+  width: 95%;        */
+  margin: 0 auto;   
+  display: flex;
+  flex-direction: column; 
+  /* align-items: center;  */
+  min-height: 100vh; 
+  font-family: Arial, sans-serif; 
+  background-color: #f8f9fa;
+  /* overflow: auto; */
+  list-style: none;
+}
+ul{
+  list-style: none;
+}
+/* Checkbox Styling */
+input[type=checkbox] {
+  margin-right: 10px;
+}
+.body-header {
+  background: linear-gradient(to right, black, red);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.search-bar input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 250px;
+}
+
+.search-bar button {
+  background-color: #e50914;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Label Styling */
+label {
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+label span {
+  margin-left: 8px;
+}
+
+/* Filter Container */
+.filter-container {
+  padding: 16px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  /* width: 100%; */
+  space-y: 16px;
+}
+
+/* Button Container */
+.filter-button-container .filter-left {
+  display: flex;
+  space-x: 16px;
+  width: 40%;
+  justify-content: space-around;
+
+}
+
+.filter-button-container  {
+  display: flex;
+  space-x: 16px;
+  justify-content: space-between;
+}
+
+
+/* Buttons */
+.filter-button, .filter-dropdown-button {
+  padding: 8px 16px;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.filter-button:hover, .filter-dropdown-button:hover {
+  background-color: #d6d9e0; 
+}
+
+/* Dropdown Container */
+.filter-dropdown-container {
+  position: relative;
+}
+
+/* Dropdown Menu */
+.filter-dropdown-menu {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 8px;
+  margin-top: 8px;
+  width: 192px;
+  max-height: 200px; /* Limit height */
+  overflow-y: auto;  /* Add vertical scroll */
+}
+
+/* Dropdown Label */
+.filter-dropdown-label {
+  display: flex;
+  align-items: center;
+  space-x: 8px;
+  padding: 4px 0;
+  cursor: pointer;
+}
+
+/* Salary Range */
+.filter-salary-range {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 8px;
+  width: 192px;
+}
+
+/* Salary Input */
+.filter-salary-input {
+  width: 100%;
+}
+
+/* Overlay */
+.filter-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+/* Modal */
+.filter-modal {
+  background-color: white;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  width: 75%;
+  max-height: 80%; /* Limit height */
+  overflow-y: auto;  /* Add vertical scroll */
+}
+
+/* Modal Title */
+.filter-modal-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  display: block;
+  
+}
+
+/* Modal Section Title */
+.filter-modal-section-title {
+  font-weight: bold;
+  margin-top: 16px;
+  
+}
+.filter-modal-container{
+  max-height: 200px; /* Giới hạn chiều cao */
+overflow-y: auto; /* Bật thanh cuộn khi nội dung vượt quá */
+border: 1px solid #ccc; /* Viền cho rõ ràng */
+padding: 10px;
+border-radius: 8px;
+}
+
+/* Modal Label */
+.filter-modal-label {
+  display: flex;
+  align-items: center;
+  space-x: 8px;
+  padding: 4px 0;
+  cursor: pointer;
+  display: flex;
+align-items: center;
+margin-bottom: 8px;
+}
+
+/* Modal Footer */
+.filter-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+/* Modal Close Button */
+.filter-modal-close-button {
+ 
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+.filter-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.filter-modal-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0 16px 0 0;
+}
+
+.filter-modal-close-button {
+  
+  color: rgb(26, 6, 6);
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filter-modal-close-button:hover {
+  background-color: #cec5c5; /* Darker Red */
+}
+
+.filter-button{
+  display: flex;
+
+}
+.container-job-level {
+  display: flex;
+
+  width: 100%;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.job-level-col-4 {
+  width: 40%;
+  display: flex;
+  flex: 4f;
+  flex-direction: column;
+}
+.container-job-level{
+  display: flex;
+}
+
+.job-level-col-6-right {
+  width: 90%;
+}
+
+.job-category {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: xx-large;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.job-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 15px;
+  border-left: 5px solid #ff2109;
+  transition: transform 0.2s ease-in-out;
+}
+
+
+h3 {
+  font-size: 18px;
+  color: black;
+  margin-bottom: 5px;
+  font-size: xx-large;
+}
+
+p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.tags {
+  margin-top: 10px;
+}
+.tag {
+  display: inline-block;
+  background: #e1e6eb;
+  color: rgb(13, 6, 6);
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.job-detail {
+  border: 1px solid #ddd;
+  padding: 20px;
+  background: #fff;
+  flex-grow: 1;
+}
+
+.apply-button{
+  width: 100%;
+  background-color: red;
+  color: white;
+  padding: 5px;
+  font-size: larger;
+}
+
+.apply-button:hover{
+  background-color: #a30101;
+}
+
+.filter-search-input{
+  width: 90%;
+  font-size: x-large;
+  padding: 10px;
+  margin: 10px;
+}
+.container-job-level {
+  display: flex;
+  gap: 20px;
+}
+
+.job-level-col-4-left {
+  width: 40%;
+  max-height: 100vh;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.job-detail {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+}
+.job-logo{
+  display: flex;
+}
+
+.job-detail-right{
+  padding-left: 15px;
+} 
+.job-detail-content {
+  max-height: 400px; 
+  overflow-y: auto;  
+  padding-right: 10px;
+}
+
+
+
+
