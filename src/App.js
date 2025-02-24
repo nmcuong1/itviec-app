@@ -3,9 +3,9 @@ import './App.css';
 import "../src/assets/styles/Header.css"
 import "../src/assets/styles/Footer.css"
 import "../src/assets/styles/HomePage.css"
- import iconLinkedin from "./assets/images/icon/social.png"
- import iconface from './assets/images/icon/icon_face.jpg'
- import iconyoutobe from './assets/images/icon/icon_youyobe.png'
+import iconLinkedin from "./assets/images/icon/social.png"
+import iconface from './assets/images/icon/icon_face.jpg'
+import iconyoutobe from './assets/images/icon/icon_youyobe.png'
 import { useEffect, useState } from 'react';
 import logo from "./assets/images/logo_itviec.webp"
 
@@ -68,6 +68,7 @@ function App() {
 
   return (
    <div>
+    {/* Header */}
      <header className="header">
       <nav>
               { <img src={logo} alt="ITviec Logo" className="logo" /> }
@@ -107,9 +108,7 @@ function App() {
       </nav>
     </header>
 
-
-
-
+{/* Body */}
     <div className='body'>
       <div class="body-header">
         <div class="search-bar">
@@ -173,7 +172,6 @@ function App() {
               Bộ Lọc
             </button>
           </div>
-      
           {openFilter && (
             <div className="filter-overlay">
               <div className="filter-modal">
@@ -332,18 +330,15 @@ function App() {
               </div>
             </div>
           ) : (
-            <h2>Chọn công việc để xem chi tiết</h2>
+            <h2>chi tiết</h2>
           )}
         </div>
 
         </div>
       </div>
     </div>
-
-
-
-
-
+    
+{/* Footer */}
     <footer>
       
       <div className="footer-links">
